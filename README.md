@@ -42,6 +42,19 @@ The directory contains the following subdirectories: `src` contains the solver a
 An up to date version of the code can be cloned from [https://github.com/aerorobotics/sets](https://github.com/aerorobotics/sets). Any updates will be pushed there. 
 
 
+## Using PyCharm with Anaconda
+
+**Yes, you can run this code on Anaconda with PyCharm!** 
+
+For detailed step-by-step instructions on setting up this project in PyCharm with Anaconda, see **[PYCHARM_SETUP.md](PYCHARM_SETUP.md)**.
+
+The guide includes:
+- Complete Anaconda environment setup
+- PyCharm project configuration
+- Running and debugging scripts in PyCharm
+- Troubleshooting common issues
+
+
 ## Installation
 
 Basic dependencies 
@@ -54,6 +67,14 @@ sudo apt install libyaml-dev
 Use conda for most dependencies. 
 ```bash
 conda env create --file environment.yml
+```
+
+Alternatively, if you prefer pip, you can install dependencies using:
+```bash
+conda create -n sets python=3.7
+conda activate sets
+pip install -r requirements.txt
+# Note: Some packages like MOSEK still require conda installation
 ```
 
 Add src to path:
