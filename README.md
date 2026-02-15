@@ -44,13 +44,18 @@ An up to date version of the code can be cloned from [https://github.com/aerorob
 
 ## Using PyCharm with Anaconda
 
-**Yes, you can run this code on Anaconda with PyCharm!** 
+**✅ Yes, you can run this code on Anaconda with PyCharm!** 
 
-For detailed step-by-step instructions on setting up this project in PyCharm with Anaconda, see **[PYCHARM_SETUP.md](PYCHARM_SETUP.md)**.
+### Quick Setup
+See **[QUICKSTART_PYCHARM.md](QUICKSTART_PYCHARM.md)** for a 5-minute setup guide.
 
-The guide includes:
+### Detailed Guide
+For comprehensive step-by-step instructions, see **[PYCHARM_SETUP.md](PYCHARM_SETUP.md)**.
+
+The guides include:
 - Complete Anaconda environment setup
 - PyCharm project configuration
+- Pre-configured run configurations for all scripts
 - Running and debugging scripts in PyCharm
 - Troubleshooting common issues
 

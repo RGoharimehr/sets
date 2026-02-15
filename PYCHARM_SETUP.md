@@ -117,7 +117,22 @@ cd scripts/
 python policy_convergence.py
 ```
 
-### Option B: Create Run Configurations
+### Option B: Use Pre-configured Run Configurations
+
+This project includes pre-configured run configurations for the main scripts. After opening the project in PyCharm:
+
+1. Look for the run configuration dropdown in the top toolbar (near the green play button ▶️)
+2. You should see configurations for:
+   - **Value Convergence** - Runs `value_convergence.py`
+   - **Policy Convergence** - Runs `policy_convergence.py`
+   - **Rollout** - Runs `rollout.py`
+3. Select a configuration and click the green play button ▶️ to run
+
+These configurations are stored in the `.run/` directory and are automatically recognized by PyCharm.
+
+### Option C: Create Custom Run Configurations
+
+If you need to create additional run configurations:
 
 1. Right-click on a script file (e.g., `scripts/value_convergence.py`)
 2. Select **Run 'value_convergence'**

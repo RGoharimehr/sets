@@ -6,10 +6,14 @@
 
 # PyCharm
 .idea/
+!.idea/runConfigurations/
 *.iml
 *.iws
 *.ipr
 .idea_modules/
+
+# PyCharm run configurations - we keep .run/ directory
+# It contains shared run configurations for the project
 
 # Python
 *.pyc
