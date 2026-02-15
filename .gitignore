@@ -3,3 +3,38 @@
 **/__pycache__/**
 *.orig
 .DS_Store
+
+# PyCharm
+.idea/
+!.idea/runConfigurations/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# PyCharm run configurations - we keep .run/ directory
+# It contains shared run configurations for the project
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+downloads/
+.eggs/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# OS
+Thumbs.db

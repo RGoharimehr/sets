@@ -42,7 +42,42 @@ The directory contains the following subdirectories: `src` contains the solver a
 An up to date version of the code can be cloned from [https://github.com/aerorobotics/sets](https://github.com/aerorobotics/sets). Any updates will be pushed there. 
 
 
+## Using PyCharm with Anaconda
+
+**✅ Yes, you can run this code on Anaconda with PyCharm!** 
+
+### Quick Setup
+See **[QUICKSTART_PYCHARM.md](QUICKSTART_PYCHARM.md)** for a 5-minute setup guide.
+
+### Detailed Guide
+For comprehensive step-by-step instructions, see **[PYCHARM_SETUP.md](PYCHARM_SETUP.md)**.
+
+The guides include:
+- Complete Anaconda environment setup
+- PyCharm project configuration
+- Pre-configured run configurations for all scripts
+- Running and debugging scripts in PyCharm
+- Troubleshooting common issues
+
+
 ## Installation
+
+⚠️ **Security Notice**: The original environment uses PyTorch 1.12.1, which has known security vulnerabilities. See [SECURITY.md](SECURITY.md) for details and recommended updates.
+
+### Recommended: Secure Installation (Python 3.9 + PyTorch 2.6+)
+
+```bash
+# Install system dependencies
+sudo apt install build-essential
+sudo apt install libeigen3-dev
+sudo apt install libyaml-dev
+
+# Create secure conda environment
+conda env create --file environment-secure.yml
+conda activate sets
+```
+
+### Alternative: Original Installation (Has Security Vulnerabilities)
 
 Basic dependencies 
 ```bash
@@ -54,6 +89,14 @@ sudo apt install libyaml-dev
 Use conda for most dependencies. 
 ```bash
 conda env create --file environment.yml
+```
+
+Alternatively, if you prefer pip, you can install dependencies using:
+```bash
+conda create -n sets python=3.9
+conda activate sets
+pip install -r requirements.txt
+# Note: Some packages like MOSEK still require conda installation
 ```
 
 Add src to path:
