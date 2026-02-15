@@ -1,6 +1,7 @@
 name: sets
 channels:
   - mosek
+  - pytorch
   - defaults
 dependencies:
   - python=3.9
@@ -16,5 +17,5 @@ dependencies:
   - mosek=10.0.45
   - bottleneck
   - eigen=3.3.7
-  - libyaml-dev
+  - yaml=0.2.5
 prefix: ~/anaconda3/envs/sets
