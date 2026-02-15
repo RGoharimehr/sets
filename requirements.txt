@@ -5,7 +5,9 @@ matplotlib==3.5.3
 seaborn==0.12.2
 
 # Machine learning
-torch==1.12.1
+# SECURITY: PyTorch 1.12.1 has known vulnerabilities. Use 2.6.0+ for full security patches.
+# Note: PyTorch 2.x requires Python 3.8+. If using Python 3.7, use torch>=1.13.1 as minimum.
+torch>=2.6.0  # For Python 3.8+; use torch>=1.13.1 for Python 3.7
 
 # Utilities
 pyyaml==6.0

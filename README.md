@@ -62,6 +62,23 @@ The guides include:
 
 ## Installation
 
+⚠️ **Security Notice**: The original environment uses PyTorch 1.12.1, which has known security vulnerabilities. See [SECURITY.md](SECURITY.md) for details and recommended updates.
+
+### Recommended: Secure Installation (Python 3.9 + PyTorch 2.6+)
+
+```bash
+# Install system dependencies
+sudo apt install build-essential
+sudo apt install libeigen3-dev
+sudo apt install libyaml-dev
+
+# Create secure conda environment
+conda env create --file environment-secure.yml
+conda activate sets
+```
+
+### Alternative: Original Installation (Has Security Vulnerabilities)
+
 Basic dependencies 
 ```bash
 sudo apt install build-essential
@@ -76,7 +93,7 @@ conda env create --file environment.yml
 
 Alternatively, if you prefer pip, you can install dependencies using:
 ```bash
-conda create -n sets python=3.7
+conda create -n sets python=3.9
 conda activate sets
 pip install -r requirements.txt
 # Note: Some packages like MOSEK still require conda installation

@@ -12,6 +12,16 @@ sudo apt install build-essential libeigen3-dev libyaml-dev
 ```
 
 ### 2. Create Anaconda Environment
+
+⚠️ **Security Note**: Use `environment-secure.yml` for secure setup. See [SECURITY.md](SECURITY.md).
+
+**Recommended (Secure):**
+```bash
+conda env create --file environment-secure.yml
+conda activate sets
+```
+
+**Or use original (has vulnerabilities):**
 ```bash
 conda env create --file environment.yml
 conda activate sets

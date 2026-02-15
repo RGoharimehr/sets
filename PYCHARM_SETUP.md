@@ -20,14 +20,27 @@ sudo apt install libyaml-dev
 
 ## Step 2: Create Conda Environment
 
-Open a terminal and navigate to the project directory:
+Open a terminal and navigate to the project directory.
+
+⚠️ **Important Security Notice**: The original `environment.yml` uses PyTorch 1.12.1 with Python 3.7, which has multiple known security vulnerabilities. We strongly recommend using the secure environment. See [SECURITY.md](SECURITY.md) for details.
+
+**Recommended: Secure Installation (Python 3.9 + PyTorch 2.6+)**
+
+```bash
+cd /path/to/sets
+conda env create --file environment-secure.yml
+```
+
+This creates a conda environment named `sets` with Python 3.9 and PyTorch 2.6.0+ (all vulnerabilities patched).
+
+**Alternative: Original Installation (Not Recommended - Has Vulnerabilities)**
 
 ```bash
 cd /path/to/sets
 conda env create --file environment.yml
 ```
 
-This will create a conda environment named `sets` with Python 3.7 and all required dependencies.
+This creates the original environment with Python 3.7 and PyTorch 1.12.1 (has security issues).
 
 Activate the environment:
 
